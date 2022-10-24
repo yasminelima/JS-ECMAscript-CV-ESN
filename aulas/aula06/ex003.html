@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body { 
+            background-color: rgb(105, 105, 173); /* comentário em css*/
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!-- isso é um comentário em HTML -->
+    <p>Já me livrei da maldição.</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número')) //prompt trata o valor como string
+        var n2 = Number(window.prompt('Digite outro número')) //conversão de string pra number com parseItem/parseFloat
+        var s = n1 + n2
+        window.alert(`a soma entre ${n1} com ${n2} é ${s}`)
+        
+        //window.alert('A soma dos valores é ' + String(s)) //concatenação de string e number
+
+        //number + number para adição
+        //string + number concatenação
+
+        // n.toString ou String(n) = conversão de s > n
+
+        //s.length - quantos caracteres tem a string
+        //.toUpperCase() MAIÚSCULA 
+        //.toLowerCase() tudo para minúscula 
+    </script>
+</body>
+</html>
