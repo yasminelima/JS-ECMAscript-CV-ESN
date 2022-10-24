@@ -10,7 +10,3 @@
         <p>📺  Curso em Video <br><br> ⏰ Carga Horária: 40h<br><br> 📜 Certificado: <a href="" target="_blank">EM ANDAMENTO</a></p>
         </td>
     </tr>
-
-# JS-ECMAscript-CV-ESN
- JS | ECMAScript | Curso em Video | Estudonauta | 40h  
-
