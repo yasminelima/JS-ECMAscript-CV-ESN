@@ -1,4 +1,4 @@
-<h1>JS-ECMAscript-CV-ESN</h1>
+<h1>JS-ECMAScript-CV-ESN</h1>
 
 <p>Arquivos e projetos relativos ao curso de <strong>JavaScript</strong> e <strong>ECMAScript</strong> da plataforma <a href="https://www.estudonauta.com/curso/javascript/" target="_blank"><strong>Estudonauta</strong></a> e <a href="https://www.cursoemvideo.com/curso/javascript/" target="_blank"><strong>Curso em Vídeo</strong></a> com patrocínio do <strong>Google<strong>.
 
