@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando a Aula 06</title>
+    <style>
+        body {
+            background-color: rgb(173, 147, 196);
+            color: bisque;
+            font-family:  'Courier New', Courier, monospace;
+        }
+        h1 {
+            text-decoration: underline;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h2{
+            background-color: rgb(142, 121, 161);
+            padding: 10px;
+        }
+
+        h3 {
+            color: rgb(250, 239, 227);
+        }
+
+        code {
+            display: block;
+            color: black;
+            background-color: white;
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Perguntas</h1>
+    <h2>/*Q01</h2>
+    <h3>Como é possível guardar o valor digitado em um prompt() dentro de uma variável?</h3>
+    <p><code>
+        var <strong>nome</strong> = window.prompt('Qual é seu nome?') <br><br>
+        document.write(`Seja bem-vindo <strong>${nome}</strong>.`)
+    </code></p>
+
+    <h2>/*Q02</h2>
+    <h3>Como fazer com que um número digitado em um prompt() possa ser usado em cálculos?</h3>
+    <p><code>
+        var <strong>n1</strong> = Number(window.prompt('Agora digite um número entre 1 e 10')) <br><br>
+        var <strong>n2</strong> = Number(window.prompt('Digite outro número entre 1 e 10')) <br><br>
+        var <strong>soma</strong> = n1 + n2 <br><br>
+        document.write(`A soma de <strong>${n1}</strong> e <strong>${n2}</strong> é <strong>${soma}</strong>.`)
+    </code></p>
+
+    <h2>/*Q03</h2>
+    <h3>Como transformar um texto todo para letras maiúsculas?</h3>
+    <p><code>
+        var nome = window.prompt('Qual é seu nome?')<br><br>
+        document.write(`Seja bem-vindo ${nome.toUpperCase()}.`)
+    </code></p>
+
+    <h2>/*Q04</h2>
+    <h3>Como mostrar um número formatado como um valor monetário?</h3>
+    <p><code>
+        n1.toLocaleString('pt-BR', {style: 'currency', currency:'GBP'})
+    </code></p>
+
+    </body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        window.alert(`Seja bem-vindo ${nome.toUpperCase()}.`)
+
+        var n1 = Number(window.prompt('Agora digite um número entre 1 e 10'))
+        var n2 = Number(window.prompt('Digite outro número entre 1 e 10')) 
+        var soma = n1 + n2
+        alert(`A soma de ${n1} e ${n2} é ${soma}.`)
+        
+        alert(soma.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}) + ' seria o valor da soma em moeda REAL (BRL) e ' + n1.toFixed(2) + ' seria o primeiro número digitado com duas casas decimais e o segundo ' + n2.toFixed(3) + ' com três casas decimais' )
+    </script>
+</html>
