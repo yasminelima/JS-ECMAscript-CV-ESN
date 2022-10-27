@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática da Aula 09</title>
+    <style>
+
+        body {
+            font: 10pt Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: blueviolet;
+        }
+        
+        h1 {
+            font: 20pt, Arial, Helvetica, sans-serif;
+            color: pink;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        p#question {
+            font: 15pt Arial, Helvetica, sans-serif;
+            color: pink;
+            margin: 15px 0px
+        }
+
+        p#resposta {
+            font: 10pt Arial, Helvetica, sans-serif;
+            color: white;
+            margin: 15px 0px
+        }
+        
+
+    </style>
+
+</head>
+<body>
+   
+    <h1>QUESTÕES DE PRÁTICA</h1>
+
+<p id="question"><span>1</span> O que significa a sigla DOM?</p>
+<p id="resposta0">R: </p>
+
+<p id="question"><span>1</span> Sabe montar a árvore DOM de um website simples?</p>
+<p id="resposta1">R: </p>
+
+<p id="question"><span>1</span> O que são elementos Parent e os elementos Child em uma árvore DOM?</p>
+<p id="resposta2">R: </p>
+
+<p id="question"><span>1</span> Quais são os cinco principais métodos de selecionar os elementos DOm dentro do JS?</p>
+<p id="resposta3" class="classe1">R: </p>
+
+
+<script>
+
+// Elementos por Marca - <span> 
+
+var num = 1
+var soma = num++
+
+window.document.getElementsByTagName('span')[0].textContent = Number.parseInt(soma++) 
+
+window.document.getElementsByTagName('span')[1].textContent = Number.parseInt(soma++) 
+
+window.document.getElementsByTagName('span')[2].textContent = Number.parseInt(soma++) 
+
+window.document.getElementsByTagName('span')[3].textContent = Number.parseInt(soma++) 
+
+// window.document.getElementsByTagName('span')[0].textContent = '01'
+// window.document.getElementsByTagName('span')[1].textContent = '02'
+// window.document.getElementsByTagName('span')[2].textContent = 03`
+// window.document.getElementsByTagName('span')[3].textContent = '04'
+
+
+window.document.getElementById('resposta0').innerText = 'Document Object Model - Facilitador que o navegador usa pra gerenciar os elementos de um arquivo HTML.'
+
+window.document.getElementById('resposta1').innerText = `Sim, cada página tem um de acordo com os elementos.
+
+Exemplo:
+...........................DOCUMENT 
+..............................<HTML> 
+..........<HEAD>..........................<BODY>
+...element:<title>.......element:<h1>......element:<a>
+...    text:'my title'..........text:'my title'.......text:'my link'
+`
+
+window.document.getElementById('resposta2').innerText = 'Pais e filhos na ordem de Hierarquia na árvore do DOM.'
+
+window.document.querySelector ('#resposta3').innerText = `> Tag
+> Id
+> Name
+> Class
+> Selector`
+// query seleção via elementos css
+</script>
+
+</body>
+</html>
+

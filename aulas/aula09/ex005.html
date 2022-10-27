@@ -5,8 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+
+        }
+    </style>
 </head>
 <body>
     <h1>Iniciando estudos com DOM</h1>
+    <p>Esse é o primeiro parágrafo</p>
+    <p id="xpx">Esse é o <strong>SEGUNDO</strong> parágrafo</p>
+    <div id="msg">Clique em mim</div><br>
+    <div id="nota">Ou clique aqui!</div><br>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] 
+        
+        //lembrando que o win é opcional
+        
+        window.document.write('Aqui estamos copiando o primeiro parágrafo: ' + p1.innerText)
+
+        window.document.getElementById('msg').innerText = 'estou aguardando...'
+        window.document.getElementById('msg').style.color = 'green' 
+        // var d = window.document.getElementById('msg')
+        //d.style.color = 'green'    
+        //d.innerText = 'estou aguardando...'
+
+        corpo.style.background = 'black' 
+        p1.style.color = 'yellow'
+        
+        //window.alert(p1.innerText)
+
+        //var y = window.document.querySelector('#nota') //sintaxe do html
+        //y.style.color = 'red'
+
+        window.document.querySelector('#xpx').style.color = 'pink' 
+
+        window.document.querySelector('#nota').style.color = 'red' 
+        window.document.querySelector('#nota').style.background = '#CCE5FF'
+
+        </script>
 </body>
 </html>
