@@ -11,11 +11,9 @@ ul#atividades li {
     float: left;
     width: 100px;
     height: 100px;
-    margin: 30px 20px;
-    padding: 10px;
-    margin-left: 50px;
-
-    
+    margin: 30px;
+    margin-bottom: 60px;
+  
     border: 5px solid var(--color02);
     background-color: var(--color04);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
@@ -36,7 +34,6 @@ ul#atividades li span {
 ul#atividades li:hover {
     transform: scale(1.5);
     border: none;
-
 }
 
 ul#atividades li:hover span {
