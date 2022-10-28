@@ -13,7 +13,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: var(--color01);
-    color: var(--color06);
+    color: var(--color01));
     margin-top: 70px;
 }
 
@@ -47,66 +47,18 @@ section#corpo {
     padding-right: 15px;
 }
 
-article#noticiaprincipal h2 {
-    font-size: 13pt;
+article#atvdestaque h2 {
+    font-size: 15pt;
     color: var(--color01);
-    background-color: var(--color05);
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
 }
 
-ul#atividades li {
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    border: 5px solid white;
-    background-color: white;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
-    transition: all .4s ease-in;
-}
-
-ul#atividades li span {
-    opacity: 0;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    background-color: rgba(0,0,0,.3);
-    font-size: 9pt;
-    line-height: 370px;
-    padding: 5px;
-}
-
-ul#atividades li:hover {
-    transform: scale(1.5);
-
-}
-
-ul#atividades li:hover span {
-    opacity: 1;
-}
-
-ul#atividades li#atv01 {
-    background: url('../imagens/galeria-01.jpg') no-repeat;
-    background-position: 50% 50%;
-    background-size: 400px 400px;
-    background-color: white;
-}
-
-ul#atividades li#atv01:hover {
-        background-position: 0px 0px;
-        background-size: 200px 200px;
-}
-
-ul#atividades li#atv02 {
-    background: url('../imagens/galeria-02.jpg') no-repeat;
-    background-position: 50% 50%;
-    background-size: 400px 400px;
-    background-color: white;
-}
-
-ul#atividades li#atv02:hover {
-    background-position: 0px 0px;
-    background-size: 200px 200px;
+article#atvdestaque p {
+    font-size: 13pt;
+    color: var(--color01);
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
 }
 
 aside#lateral {

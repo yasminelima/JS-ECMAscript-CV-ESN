@@ -1,0 +1,53 @@
+ul#pratica li {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 5px solid var(--color02);
+    background-color: var(--color04);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    transition: all .4s ease-in;
+}
+
+ul#pratica li span {
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#pratica li:hover {
+    transform: scale(1.5);
+
+}
+
+ul#pratica li:hover span {
+    opacity: 1;
+}
+
+ul#pratica li#atv01 {
+    background: url('../imagens/galeria-01.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+ul#pratica li#atv01:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+}
+
+ul#pratica li#atv02 {
+    background: url('../imagens/galeria-02.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+ul#pratica li#atv02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
