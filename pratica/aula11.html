@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+
+    <style>
+        body {
+            background-color: crimson;
+            color: white;
+            font: bold 17pt Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 40pt;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        div#codigo {
+            font: bold 8pt 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 2px solid white;
+            padding: 10px;
+            width: 200px;
+            text-align: justify;
+        }
+
+        .resp, #res, ul {
+            font-size: 12pt;
+        }
+       
+
+    </style>
+
+</head>
+<body>
+
+    <h1>✰ Prática da Aula 10 ✰</h1>
+    
+    <p id="pergunta">Consegue citar três eventos que podem acontecer com elementos DOM de um site?</p>
+    <p class="resp" id="resposta0">
+    <ul>
+        <li id="clicando">onclick</li>
+        <li id="overando">onmouseover</li>
+        <li id="overando2">onmouseenter</li>
+    </ul>
+    </p>
+    
+    <p id="pergunta">O que é uma função? Como criar funções em JS?</p>
+    <p class="resp" id="resposta1">R:
+    
+    <div id="codigo">
+        <code>function nome() { <br>
+            bloco de código <br>
+        }</code>
+    </div>
+    </p>
+
+        
+    <p id="pergunta">Sabe como pegar os valores de caixas de texto e fazer cálculos com eles?</p>
+    <p class="resp" id="resposta2">
+    <input type="number" name="nome1" id="nome1">
+    <input type="button" value="enviar" id="item">
+    <div id="res">Digite um número!</div>
+    </p>
+
+    <script>
+
+        var a = document.getElementById('clicando')
+        var b = document.getElementById('overando')
+        var c = document.getElementById('overando2')
+        
+        var x = document.querySelector('#item')
+        x.addEventListener('click', resposta)
+
+        a.addEventListener('click', clicar)
+        b.addEventListener('mouseover', enterand)
+        b.addEventListener('mouseout', fora)
+        c.addEventListener('mouseenter', enterand2)
+        c.addEventListener('mouseout', fora2)
+
+        
+        function clicar() {
+            a.innerText =  'Clicou!'
+            a.style.background = 'white'
+            a.style.color = 'red'
+        }
+                
+        function enterand() {
+            b.style.background = 'orange'
+            b.style.color = 'red'
+        }
+
+        function fora() {
+            b.style.background = 'crimson'
+            b.style.color = 'white'
+        }
+
+        function enterand2() {
+            c.style.background = 'blue'
+            c.style.color = 'white'
+            c.innerText = 'onmouseenter'
+        }
+
+        function fora2() {
+            c.style.background = 'crimson'
+            c.style.color = 'white'
+            c.innerText = 'onmouseout' 
+        }
+
+        function resposta() {
+            var tn1 = window.document.getElementById('nome1')
+            var res = window.document.querySelector('div#res')
+
+            var n1 = Number(tn1.value)
+
+            res.innerHTML = `O número digitado é <strong>${n1}</strong>!`            
+        }
+
+        window.document.querySelector ('#resposta1').innerText = `Um conjunto de instruções, conforme exemplo:`
+            
+    </script>
+</body>
+</html>
