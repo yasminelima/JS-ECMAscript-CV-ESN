@@ -1,7 +1,7 @@
 ul#atividades {
     width: 400px;
     margin: 0 auto; 
-    padding: 50px;
+    padding: 0px;
     overflow: hidden;
     list-style: none;
 }
@@ -23,7 +23,7 @@ ul#atividades li span {
     text-shadow: 1px 1px 1px black;
     background-color: rgba(0,0,0,.3);
     font-size: 9pt;
-    line-height: 370px;
+    line-height: 190px;
     padding: 5px;
 }
 
@@ -36,16 +36,15 @@ ul#atividades li:hover span {
     opacity: 1;
 }
 
-ul#atividades li#atv01 {
+ul#atividades li#atv04 {
     background: url('../aulas/aula04/ex001.html') no-repeat;
     background-position: 50% 50%;
-    background-size: 400px 400px;
-    background-color: white;
+    background-size: 100px 100px;
 }
 
-ul#atividades li#atv01:hover {
+ul#atividades li#atv04:hover {
         background-position: 0px 0px;
-        background-size: 200px 200px;
+        background-size: 100px 100px;
 }
 
 ul#atividades li#atv02 {
