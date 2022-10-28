@@ -88,3 +88,40 @@ aside#lateral p {
     margin: 10px 0px 10px 0px;
 }
 
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid var(--color01);
+    padding: 10px;
+    background-color: #0B2B40;
+    color: var(--color04)
+}
+
+footer#rodape p {
+    text-align: center;
+    margin: auto;
+}
+
+p#yas {
+    display: block;
+    width: 460px;
+    padding: 0%;
+    margin: auto;
+    text-align: center;
+    text-indent: 0px;
+    }
+
+p#yas a {
+    text-decoration: none;
+    color: var(--color02);
+    }
+        
+p#yas a:hover {
+    text-decoration: underline;
+    }
+
+p#clear {
+    clear: both;
+}
+
+ 
