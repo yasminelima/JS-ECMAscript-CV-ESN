@@ -1,6 +1,7 @@
 ul#atividades {
     width: 400px;
     margin: 0 auto; 
+    margin-bottom: 50px;
     padding: 0px;
     overflow: hidden;
     list-style: none;
@@ -10,7 +11,11 @@ ul#atividades li {
     float: left;
     width: 100px;
     height: 100px;
-    margin: 10px;
+    margin: 30px 20px;
+    padding: 10px;
+    margin-left: 50px;
+
+    
     border: 5px solid var(--color02);
     background-color: var(--color04);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
@@ -22,39 +27,25 @@ ul#atividades li span {
     color: white;
     text-shadow: 1px 1px 1px black;
     background-color: rgba(0,0,0,.3);
-    font-size: 9pt;
-    line-height: 190px;
+    font-size: 8pt;
+    line-height: 0px;
+    margin-left: 8px;
     padding: 5px;
 }
 
 ul#atividades li:hover {
     transform: scale(1.5);
+    border: none;
 
 }
 
 ul#atividades li:hover span {
+    transform: scale(1.5);
     opacity: 1;
 }
 
-ul#atividades li#atv04 {
-    background: url('../aulas/aula04/ex001.html') no-repeat;
-    background-position: 50% 50%;
-    background-size: 100px 100px;
-}
-
-ul#atividades li#atv04:hover {
-        background-position: 0px 0px;
-        background-size: 100px 100px;
-}
-
-ul#atividades li#atv02 {
-    background: url('../imagens/galeria-02.jpg') no-repeat;
-    background-position: 50% 50%;
-    background-size: 400px 400px;
-    background-color: white;
-}
-
-ul#atividades li#atv02:hover {
-    background-position: 0px 0px;
-    background-size: 200px 200px;
+iframe {
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
 }

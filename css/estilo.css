@@ -27,8 +27,8 @@ div#interface {
 
 header#cabecalho {
     border-bottom: 1px #0B2B40;
-    height: 150px;
     background-color: var(--color05); 
+    padding: 10px 10px;
 }
 
 header#cabecalho h1 {
