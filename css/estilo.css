@@ -25,11 +25,25 @@ div#interface {
     padding: 10px;
 }
 
+header#cabecalho {
+    border-bottom: 1px #0B2B40;
+    height: 150px;
+    background-color: var(--color05); 
+}
+
+header#cabecalho h1 {
+    font-size: 30px;
+    color: var(--color04);
+    text-shadow: 2px 2px 2px var(--color03);
+    padding: 0px;
+    margin: 0px auto;
+}
+
 section#corpo {
     display: block;
     width: 460px;
     float: left;
-    border-right: 1px solid var(--color04);
+    border-right: 1px solid var(--color01);
     padding-right: 15px;
 }
 
@@ -41,11 +55,65 @@ article#noticiaprincipal h2 {
     margin: 10px 0px 10px 0px;
 }
 
+ul#atividades li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    transition: all .4s ease-in;
+}
+
+ul#atividades li span {
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0,0,0,.3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#atividades li:hover {
+    transform: scale(1.5);
+
+}
+
+ul#atividades li:hover span {
+    opacity: 1;
+}
+
+ul#atividades li#atv01 {
+    background: url('../imagens/galeria-01.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+ul#atividades li#atv01:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+}
+
+ul#atividades li#atv02 {
+    background: url('../imagens/galeria-02.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+
+ul#atividades li#atv02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
 aside#lateral {
     display: block;
     width: 453px;
     float: right;
-    background-color: var(--color05);
+    background-color: var(--color04);
     padding: 10px;
     margin-top: 0px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
