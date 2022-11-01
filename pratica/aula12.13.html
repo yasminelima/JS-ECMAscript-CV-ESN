@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da Semana</title>
+    <style>
+        div.background {
+        background: url(../imagens/pratica/calendar.jpeg) no-repeat;
+        border: 2px solid black;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        }
+
+        div.transbox {
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.8;
+        }
+
+        div.transbox {
+        margin: 5%;
+        padding: 2%;
+        font-weight: bold;
+        color: #5ead9f;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.185);
+        text-align: center;
+        }
+        
+        input#butt{
+            color: #4a6d67;
+        }
+
+        div.transbox h1 {
+        color: #FDC1BD;
+        text-shadow: 2px 2px 2px #C4E6E0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="background">
+            <div class="transbox">
+                <article id="principal">
+                <h1>Que dia é hoje?</h1>
+                <article>
+                <p>
+                    <input type="button" value="Descubra!" id="butt" onclick="voto()">
+                </p>
+                <div id="res">
+                </div>
+        </div>
+            </div>
+    </main>
+    <script>
+            var agora = new Date()
+            var diaSem = agora.getDay()
+            var soma = agora.getDay()
+            var hoje = soma - 1
+            var meses = agora.toLocaleString('default', { month: 'long' })
+            var ano = agora.getFullYear()
+ 
+               
+            function voto() {
+                switch(diaSem) {
+            case 0:
+                res.innerHTML = `Hoje é Domingo, dia ${hoje} de ${meses} de ${ano}.`
+            break
+            case 1:
+                res.innerHTML = `Hoje é Segunda, dia ${hoje} de ${meses} de ${ano}.`
+            break
+            case 2:
+                res.innerHTML = `Hoje é Terça, dia ${hoje} de ${meses} de ${ano}.`
+            break
+            case 3:
+                res.innerHTML = `Hoje é Quarta, dia ${hoje} de ${meses} de ${ano}.`
+            break
+            case 4:
+                res.innerHTML = `Hoje é Quinta, dia ${hoje} de ${meses} de ${ano}.`
+            break
+            case 5:
+                res.innerHTML = `Hoje é Sexta, dia ${hoje} de ${meses} de ${ano}.`
+            break
+            case 6:
+                res.innerHTML = `Hoje é Sábado, dia ${hoje} de ${meses} de ${ano}.`
+            break
+            default:
+                res.innerHTML = 'ERRO - DIA INVÁLIDO!'
+            break
+            }
+            }
+               
+    </script>
+</body>
+</html>
