@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+    <style>
+        body {
+            background-image: linear-gradient(to top, aquamarine, white);
+            height: 100vh;
+            color: darkslategrey;
+        }
+
+        article#ido {
+            height: 300px;
+            display: block;
+            text-indent: 10px;
+        }
+
+        div#imagg {
+            background-image: url('../imagens/pratica/image.jpeg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 300px;
+            display: block;
+            margin-top: -310px;
+        }
+
+        h1 {
+            color:  aquamarine;
+            text-shadow: 1px 2px 2px darkslategrey;
+        }
+
+        p#quest {
+            color: darkslategrey;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        input#txtvel{
+                color: darkslategrey;
+                background-color: rgba(127, 255, 212, 0.226);
+                border: 1px solid darkslategrey;
+        }
+
+        input#btm{
+            color: aquamarine;
+            text-shadow: 1px 1px 1px darkslategrey ;
+            background-color: rgba(255, 228, 196, 0.329);
+            border: solid darkslategrey;
+            padding-bottom: 3px;
+            padding-right: 7px;
+            border-radius: 15px;
+        }
+
+        div#res{
+            color: darkslategrey;
+            text-shadow: 1px 1px 1px white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        div#rexpa{
+            color: darkslategrey;
+            text-shadow: 1px 1px 1px white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+            <article id="ido">
+                <h1>Você é brasileiro?</h1>
+                        
+                        <p id="quest">Onde você nasceu? </p>
+                        <p><input type="text" class="txtvelc" id="txtvel" value="Brasil"></p>
+                        <p><input type="button" id="btm" value="Verificar" onclick="calcular()"></p>
+                        <div id="res"></div>
+                        <div id="rexpa"></div>
+            </article>
+        
+        <div id="imagg">
+        </div>
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var vel = String(txtv.value)
+
+            var res = window.document.querySelector('div#res')
+            var rexp = window.document.querySelector('div#rex')
+
+            res.innerHTML = `<p>Você nasceu no <strong>${vel}</strong>, logo: </p>`
+            if (vel == 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>Brasileiro</strong></p>`
+                rexpa.innerHTML = `<p>(:</p>`
+            } else {
+                res.innerHTML += `<p>Você é <strong>Estrangeito</strong></p>`
+                rexpa.innerHTML = `<p>):</p>`
+            }
+        }
+    </script>
+</body>
+</html>

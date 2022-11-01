@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>Onde você nasceu?</h1>
+    
+        <form>
+        <fieldset id="endereco">
+    <p><label for="cars" name="cars" id="xcars">País:</label>
+        <select name="xpais" id="xpais">
+            <optgroup label="América do Sul">
+                <option value="">Brasil</option>
+                <option value="">Argentina</option>
+                <option value="">Itália</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="">Holanda</option>
+                <option value="">Itália</option>
+                <option value="">Alemanha</option>
+                <option value="">Portugal</option>
+            </optgroup>
+            <optgroup label="América do Norte e Central">
+                <option value="">EUA</option>
+                <option value="">Canada</option>
+                <option value="">México</option>
+            </optgroup>
+            <optgroup label="África e Oriente Médio">
+                <option value="">Congo</option>
+                <option value="">Angola</option>
+                <option value="">Egito</option>
+                <option value="">Irã</option>
+                <option value="">Paquistão</option>
+            </optgroup>
+            <optgroup label="Ásia">
+                <option value="">China</option>
+                <option value="">Japão</option>
+                <option value="">Coreia do norte</option>
+            </optgroup>
+            <optgroup label="Oceania">
+                <option value="">Austrália</option>
+            </optgroup>
+            </fieldset>
+            </form>
+            <input type="button" value="Verificar" onclick="pais()">
+            <div id="res"></div>
+            <div id="resp"></div>
+
+    <script>
+
+        function pais() {
+            var x = document.getElementById("xcars");
+            var res = window.document.querySelector('div#res')
+            var y = x.nodeValue
+        resp.innerHTML += `seu pais é ${y}`
+        }
+    </script>
+</body>
+</html>
