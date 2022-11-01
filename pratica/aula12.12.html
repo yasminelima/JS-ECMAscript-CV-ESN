@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <article id="principal">
+            <h1>Que horas são?</h1>
+        <article>
+        <p>
+            <input type="button" value="Descubra!" onclick="hora()">
+        </p>
+        <div id="res">
+        </div>
+    </main>
+    <script>
+        function hora() {
+
+            var agora = new Date()
+            var hora = agora.getHours()+"h"+agora.getMinutes()
+
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>São exatamente ${hora}min.</p>`
+
+            if (hora < 12 && hora >= 6) {
+                res.innerHTML += `<p style="color:blue"> Bom dia!☀️</p>`
+            } else if (hora <= 18 && hora >= 12) {
+                res.innerHTML += `<p style="color:orange"> Boa tarde!🌇</p>`
+            } else if (hora <= 5) {
+                res.innerHTML += `<p style="color:blue"> Boa Madrugada!💤</p>`
+            } else if (hora > 24) {
+                res.innerHTML += `<p style="color:red"> Esse horário não existe!</p>`
+            } else {
+                res.innerHTML += `<p style="color:blue"> Boa Noite!⭐</p>`
+            }
+        }
+
+
+    </script>
+</body>
+</html>

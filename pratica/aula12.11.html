@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            background-image: linear-gradient(to bottom, cornflowerblue, white);
+            height: 100vh;
+            color: darkslategrey;
+        }
+
+        main {
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+
+        article h1 {
+            color: azure;
+            text-shadow: 1px 1px 1px black;
+            font-size: 30px;
+        }
+
+        article p {
+            color: darkslategrey;
+            font-weight: normal;
+            }
+
+        input#idade {
+            color: azure;
+            text-shadow: 1px 1px 1px black;
+            background-color: rgba(0, 0, 0, 0.144);
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <article id="principal">
+            <h1>Você pode votar?</h1>
+            <p>Digite sua idade:</p>
+        <article>
+        <p>
+            <input type="text" name="idade" id="idade">
+            <input type="button" value="Enviar!" onclick="voto()">
+        </p>
+        <div id="res">
+        </div>
+    </main>
+    <script>
+        function voto() {
+                var id = document.querySelector('input#idade')
+                var tot = Number(id.value)
+    
+                var res = window.document.querySelector('div#res')
+    
+                res.innerHTML = `Você tem <strong>${tot}</strong> `
+    
+                if (tot < 16) {
+                    res.innerHTML += `anos logo <strong style="color:green"> não pode votar</strong>!`
+                } else if (tot < 18 || tot >= 65) {
+                    res.innerHTML += `anos logo seu <strong>voto</strong> é <strong style="color:orange">OPCIONAL</strong>!`
+                } else {
+                    res.innerHTML += `anos logo seu <strong>voto</strong> é <strong style="color:red">OBRIGATÓRIO</strong>!`
+                }
+            }
+    </script>
+</body>
+</html>
