@@ -16,7 +16,6 @@
     height: 0px;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     background-color: var(--color01);
@@ -96,8 +95,8 @@ aside#lateral p {
 }
 
 iframe {
-    width: 400px;
-    height: 400px;
+    width: 465px;
+    height: 465px;
     overflow: scroll;
 }
 
