@@ -2,10 +2,10 @@
 
 :root {
 
-    --color01: #0B2B40;
-    --color02: #30A5BF;
-    --color03: #185359;
-    --color04: #F2BE22;
+    --color01: #08595A;
+    --color02: #36332A;
+    --color03: #E7E9E8;
+    --color04: #516373;
     --color05: #ffffff; 
     --color06: #000000; 
 }
@@ -32,10 +32,25 @@ div#interface {
     height: 900px;
 }
 
+/*----CABEÇALHO----*/
+
 header#cabecalho {
     border-bottom: 1px #0B2B40;
-    background-color: var(--color05); 
+    background-image: url('/imagens/pexels-fauxels-3182774.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 10px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+div#cabl {
+    background-color: #E7E9E8;
+    opacity: 0.8;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 header#cabecalho h1 {
@@ -46,6 +61,8 @@ header#cabecalho h1 {
     margin: 0px auto;
 }
 
+/*----BODY----*/
+
 section#corpo {
     display: block;
     width: 460px;
@@ -53,9 +70,11 @@ section#corpo {
     padding-right: 15px;
 }
 
+/*----PRINCIPAL----*/
+
 article#atvdestaque h2 {
     font-size: 15pt;
-    color: var(--color01);
+    color: var(--color02);
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
     text-align: center;
@@ -63,38 +82,42 @@ article#atvdestaque h2 {
 
 article#atvdestaque p {
     font-size: 13pt;
-    color: var(--color01);
+    color: var(--color02);
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
 }
 
+/*----LATERAL----*/
+
 section#lateral1 {
     display: block;
     width: 453px;
-    height: 800px;
+    height: 739px;
     float: right;
-    background-color: var(--color04);
+    background-color: var(--color01);
     padding: 0px 10px;
     margin-top: 0px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
-    border-left: 1px solid var(--color01);
+    border-left: 1px solid var(--color03);
+    margin-bottom: 15px;
 }
 
-aside#lateral h2 {
+section#lateral1 h2 {
     font-size: 15pt;
-    color: var(--color01);
+    color: var(--color03);
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
     text-align: center;
 }
 
-aside#lateral p {
+section#lateral1 p {
     font-size: 13pt;
-    color: var(--color01);
+    color: var(--color03);
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
 }
 
+/*----LISTA---*/
 
 ul {
     display: block;
@@ -106,7 +129,8 @@ ul {
 ul li {
     display: inline-block;
     border: 1px solid var(--color03);
-    background-color: #30A5BF;
+    background-color: var(--color04);
+    opacity: 0.9;
     width: 120px;
     height: 32px;
     padding: 1px;
@@ -114,6 +138,7 @@ ul li {
     font-size: 13px;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.473);
 }
 
 a {
@@ -123,9 +148,11 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: var(--color04);
+    color: var(--color03);
     font-weight: bolder;
 }
+
+/*----FRAME----*/
 
 iframe {
     width: 450px;
@@ -133,12 +160,14 @@ iframe {
     overflow: scroll;
 }
 
+/*----FOOTER----*/
+
 footer#rodape {
     clear: both;
     border-top: 1px solid var(--color01);
     padding: 10px;
-    background-color: #0B2B40;
-    color: var(--color04)
+    background-color: var(--color01);
+    color: var(--color03)
 }
 
 footer#rodape p {
@@ -157,7 +186,7 @@ p#yas {
 
 p#yas a {
     text-decoration: none;
-    color: var(--color02);
+    color: var(--color03);
     }
         
 p#yas a:hover {
