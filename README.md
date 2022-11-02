@@ -2,6 +2,8 @@
 
 <p>Arquivos e projetos relativos ao curso de <strong>JavaScript</strong> e <strong>ECMAScript</strong> da plataforma <a href="https://www.estudonauta.com/curso/javascript/" target="_blank"><strong>Estudonauta</strong></a> e <a href="https://www.cursoemvideo.com/curso/javascript/" target="_blank"><strong>Curso em Vídeo</strong></a> com patrocínio do <strong>Google<strong>.
 
+<p> <a href="https://yasminelima.github.io/JS-ECMAscript-CV-ESN/" target="_blank">LINK PARA ACESSO DA PÁGINA DOS PROJETOS</a></p>
+
 <table>
     <tr>
         <td>
