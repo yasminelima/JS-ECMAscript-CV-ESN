@@ -36,7 +36,7 @@ div#interface {
 
 header#cabecalho {
     border-bottom: 1px #0B2B40;
-    background-image: url('/imagens/pexels-fauxels-3182774.jpg');
+    background-image: url('../imagens/pexels-fauxels-3182774.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
