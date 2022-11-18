@@ -87,30 +87,54 @@ window.document.getElementsByTagName('span')[2].textContent = Number.parseInt(so
 // window.document.getElementsByTagName('span')[3].textContent = '04'
 
 
-window.document.getElementById('resposta0').innerText = `var c = 1
+window.document.getElementById('resposta0').innerText = `Utilizamos ESTRUTURAS DE REPETIÇÃO (while, do white, for, for in e for of).
 
+Exemplo simples:
+
+var c = 1
 while (c <= 6) {
-    console.log ('contando de 1 a 6')
+    console.log (c)
     c++
     }`
 
-window.document.getElementById('resposta1').innerText = `Condição segue um teste lógico com execução de blocos em sequência definida.
+window.document.getElementById('resposta1').innerText = `◉ ESTRUTURAS CONDICIONAIS: 
 
-Repetição apresenta teste lógico determinando a repetição de acordo com condições.`
+São ligadas à tomada de decisão de um algoritmo. Ao utilizar expressões que retornam verdadeiro ou falso, o algoritmo executa o bloco de comandos relativos a este resultado.
 
-window.document.getElementById('resposta2').innerText = `1) WHILE
+if (idade > 15 && idade < 18 || idade > 70) {
+	console.log("O voto é opcional")
+}else if (idade < 16) {
+	console.log("Você não pode votar")
+}else {
+	console.log("Você é obrigado a votar")
+}
 
+◉ ESTRUTURAS DE REPETIÇÃO:
+
+São úteis quando precisamos repetir N vezes a execução de um bloco de comandos até que uma condição seja atendida.
+
+var i = 0
+while (i < 11) {
+    console.log('5 x ' + i + ' = ' + 5*i)
+    i++
+}`
+
+window.document.getElementById('resposta2').innerText = `◉ WHILE
+
+var c = 1
 while (c <= 6) {
-    console.log ('contando de 1 a 6')
+    console.log (c)
     c++
     }
     
-2) DO WHILE
+◉  DO WHILE
+
+var contador = 0;
 
 do {
-    console.log ('contando de 1 a 6')
-    c++
-} while (c <= 6)`
+	console.log("O contador vale: " + contador)
+	contador++
+} while (contador == 1)`
 
 // query seleção via elementos css
 </script>
