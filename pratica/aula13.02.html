@@ -10,26 +10,48 @@
         body {
             font: 10pt Arial, Helvetica, sans-serif;
             color: white;
-            background-color: rgb(43, 174, 226);
+            background-color: black;
+            background-image: url(../imagens/pexels-fauxels-3182774.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
         }
         
         h1 {
-            font: 20pt, Arial, Helvetica, sans-serif;
-            color: rgb(192, 255, 241);
+            font: 30pt, Arial, Helvetica, sans-serif;
+            color: #B38F70;
+            text-shadow: 2px 2px 2px black;
             text-align: center;
             margin: 20px auto;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            width: 350px;
+            opacity: .9;
+            border-color: black;
         }
 
         p#question {
             font: 15pt Arial, Helvetica, sans-serif;
-            color: rgb(192, 255, 241);
-            margin: 15px 0px
+            color: beige;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.644);
+            padding: 10px;
+            margin: auto;
+            background-color: #B38F70;
+            opacity: .9;
+            width: 800px;
         }
 
-        p#resposta {
+        p.resposta {
             font: 10pt Arial, Helvetica, sans-serif;
-            color: white;
-            margin: 15px 0px
+            color: black;
+            margin: auto auto 15px auto;
+            padding: 15px;
+            background-color: white;
+            opacity: .8;
+            width: 790px;
         }
         
 
@@ -40,24 +62,24 @@
    
     <h1>QUESTÕES DE PRÁTICA</h1>
 
-<p id="question"><span>1</span> O que faço se quiser fazer uma determinada atividade acontecer várias vezeS?</p>
-<p id="resposta0">R: </p>
+<p id="question"><span>1</span> O que faço se quiser fazer uma determinada atividade acontecer várias vezes?</p>
+<p id="resposta0" class="resposta">R: </p>
 
 <p id="question"><span>1</span> Sabe diferenciar as estrutura de <strong>condição</strong> e as estruturas de <strong>repetição?</strong></p>
-<p id="resposta1">R: </p>
+<p id="resposta1" class="resposta">R: </p>
 
 <p id="question"><span>1</span> Consegue dizer a diferença entre as estruturas <strong>while</strong> e a <white>do while</white>?</p>
-<p id="resposta2">R: </p>
+<p id="resposta2" class="resposta">R: </p>
 
 <script>
 var num = 1
 var soma = num++
 
-window.document.getElementsByTagName('span')[0].textContent = Number.parseInt(soma++) 
+window.document.getElementsByTagName('span')[0].textContent = Number.parseInt(soma++) + '.'
 
-window.document.getElementsByTagName('span')[1].textContent = Number.parseInt(soma++) 
+window.document.getElementsByTagName('span')[1].textContent = Number.parseInt(soma++) + '.'
 
-window.document.getElementsByTagName('span')[2].textContent = Number.parseInt(soma++) 
+window.document.getElementsByTagName('span')[2].textContent = Number.parseInt(soma++) + '.'
 
 // window.document.getElementsByTagName('span')[0].textContent = '01'
 // window.document.getElementsByTagName('span')[1].textContent = '02'
@@ -83,7 +105,9 @@ while (c <= 6) {
     c++
     }
     
-2)  do {
+2) DO WHILE
+
+do {
     console.log ('contando de 1 a 6')
     c++
 } while (c <= 6)`
