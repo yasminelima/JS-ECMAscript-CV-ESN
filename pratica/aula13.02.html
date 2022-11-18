@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática da Aula 09</title>
+    <style>
+
+        body {
+            font: 10pt Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: rgb(43, 174, 226);
+        }
+        
+        h1 {
+            font: 20pt, Arial, Helvetica, sans-serif;
+            color: rgb(192, 255, 241);
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        p#question {
+            font: 15pt Arial, Helvetica, sans-serif;
+            color: rgb(192, 255, 241);
+            margin: 15px 0px
+        }
+
+        p#resposta {
+            font: 10pt Arial, Helvetica, sans-serif;
+            color: white;
+            margin: 15px 0px
+        }
+        
+
+    </style>
+
+</head>
+<body>
+   
+    <h1>QUESTÕES DE PRÁTICA</h1>
+
+<p id="question"><span>1</span> O que faço se quiser fazer uma determinada atividade acontecer várias vezeS?</p>
+<p id="resposta0">R: </p>
+
+<p id="question"><span>1</span> Sabe diferenciar as estrutura de <strong>condição</strong> e as estruturas de <strong>repetição?</strong></p>
+<p id="resposta1">R: </p>
+
+<p id="question"><span>1</span> Consegue dizer a diferença entre as estruturas <strong>while</strong> e a <white>do while</white>?</p>
+<p id="resposta2">R: </p>
+
+<script>
+var num = 1
+var soma = num++
+
+window.document.getElementsByTagName('span')[0].textContent = Number.parseInt(soma++) 
+
+window.document.getElementsByTagName('span')[1].textContent = Number.parseInt(soma++) 
+
+window.document.getElementsByTagName('span')[2].textContent = Number.parseInt(soma++) 
+
+// window.document.getElementsByTagName('span')[0].textContent = '01'
+// window.document.getElementsByTagName('span')[1].textContent = '02'
+// window.document.getElementsByTagName('span')[2].textContent = 03`
+// window.document.getElementsByTagName('span')[3].textContent = '04'
+
+
+window.document.getElementById('resposta0').innerText = `var c = 1
+
+while (c <= 6) {
+    console.log ('contando de 1 a 6')
+    c++
+    }`
+
+window.document.getElementById('resposta1').innerText = `Condição segue um teste lógico com execução de blocos em sequência definida.
+
+Repetição apresenta teste lógico determinando a repetição de acordo com condições.`
+
+window.document.getElementById('resposta2').innerText = `1) WHILE
+
+while (c <= 6) {
+    console.log ('contando de 1 a 6')
+    c++
+    }
+    
+2)  do {
+    console.log ('contando de 1 a 6')
+    c++
+} while (c <= 6)`
+
+// query seleção via elementos css
+</script>
+
+</body>
+</html>
+
