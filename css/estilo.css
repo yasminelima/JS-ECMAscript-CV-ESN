@@ -30,6 +30,7 @@ div#interface {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
     padding: 10px;
     height: 900px;
+    padding-bottom: 15px;
 }
 
 /*----CABEÇALHO----*/
@@ -68,6 +69,7 @@ section#corpo {
     width: 460px;
     float: left;
     padding-right: 15px;
+    
 }
 
 /*----PRINCIPAL----*/
@@ -78,6 +80,7 @@ article#atvdestaque h2 {
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
     text-align: center;
+    
 }
 
 article#atvdestaque p {
@@ -85,6 +88,7 @@ article#atvdestaque p {
     color: var(--color02);
     padding: 5px 0px 5px 10px;
     margin: 10px 0px 10px 0px;
+    
 }
 
 /*----LATERAL----*/
@@ -92,7 +96,7 @@ article#atvdestaque p {
 section#lateral1 {
     display: block;
     width: 453px;
-    height: 739px;
+    height: 725px;
     float: right;
     background-color: var(--color01);
     padding: 0px 10px;
