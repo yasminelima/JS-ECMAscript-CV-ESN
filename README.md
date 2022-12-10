@@ -8,7 +8,6 @@
     <tr>
         <td>
         <h3>Javascript</h3>
-        <p>🚀  Estudonauta <br><br> ⏰ Carga Horária: 40h<br><br> 📜 Certificado: <a href="" target="_blank">EM ANDAMENTO</a></p>
-        <p>📺  Curso em Video <br><br> ⏰ Carga Horária: 40h<br><br> 📜 Certificado: <a href="" target="_blank">EM ANDAMENTO</a></p>
+        <p>📺  Curso em Video <br><br> ⏰ Carga Horária: 40h<br><br> 📜 Certificado: <a href="https://www.cursoemvideo.com/validacao-de-certificado/?codigo=78CB0-6C61-1" target="_blank">78CB0-6C61-1</a></p>
         </td>
     </tr>
