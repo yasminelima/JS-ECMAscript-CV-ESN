@@ -22,10 +22,3 @@ function carregar() {
 
 }
 
-/* */
-
-function {
-    
-}
-
-
